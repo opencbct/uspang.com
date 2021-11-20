@@ -1,0 +1,36 @@
+{{#if loggedIn}}
+  <div class='columns'>
+    <div class='column'>
+      <ul>
+        {{#each allPosts}}
+          <li><a href="/posts/{{this.id}}">{{this.title}}</a></li>
+        {{/each}}
+      </ul>
+
+    </div>
+    <div class='column'>
+      <div class='block'>
+        <h2><strong>My Posts</strong></h2>
+      </div>
+      <ul>
+        {{#each userPosts}}
+        <li>{{this.title}}</li>
+        {{/each}}
+      </ul>
+      <input id="post-title" class="input" type="text" placeholder="Title">
+      <textarea
+          id='post-text'
+          class='textarea'
+          placeholder='comment'
+        ></textarea>
+      <button id="create-post" class="button is-dark" data-value="{{userId}}">Create Post</button>
+    </div>
+
+  </div>
+
+  <button id='logout' class='button is-dark'>Logout</button>
+{{else}}
+  <a href='/'>Login</a>
+{{/if}}
+
+<script src='../js/homepage.js'></script>
