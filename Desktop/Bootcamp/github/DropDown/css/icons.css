@@ -13,7 +13,9 @@
 .cd-dropdown span[class*=" icon-"]:before {
 	font-family: 'icomoon';
 	font-style: normal;
+	/*
 	speak: none;
+	*/	
 	font-weight: normal;
 	position: absolute;
 	font-size: 40px;
