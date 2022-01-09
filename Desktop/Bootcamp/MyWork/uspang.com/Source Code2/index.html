@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visiting Card Designer</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <h1 class="heading">design your <span>visiting card</span></h1>
+    <div class="main">
+        <div class="card">
+            <div class="logo"></div>
+            <input type="text" class="name" maxlength="30" placeholder="business name">
+            <input type="text" class="slogan" maxlength="50" placeholder="business slogan">
+
+            <input type="text" class="website-link" placeholder="website">
+            <input type="text" class="email" placeholder="email">
+        </div>
+
+        <!-- settings -->
+        <div class="setting">
+            <input type="file" accept="*image" id="upload" hidden>
+            <label for="upload" class="btn upload">upload logo</label>
+
+            <!-- backgrounds -->
+            <div class="backgrounds">
+                <img src="img/img1.png" class="active" alt="">
+                <img src="img/img2.png" alt="">
+                <img src="img/img3.png" alt="">
+                <img src="img/img4.png" alt="">
+                <img src="img/img5.png" alt="">
+                <img src="img/img6.png" alt="">
+            </div>
+            <a href="#" id="link" download="visiting card.png"></a>
+            <button class="btn download-btn">download design</button>
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>

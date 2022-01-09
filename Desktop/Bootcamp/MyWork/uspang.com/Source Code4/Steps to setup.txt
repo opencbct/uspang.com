@@ -1,0 +1,26 @@
+*** FOLLOW THIS TO SETUP YOUR WEBSITE WORKING ***
+
+1. Open the source code in code editor and in your terminal run "npm install". This will install all the required packages.
+
+2. Then Open ".env" file. And change it 
+
+    FROM
+
+    EMAIL=email id
+    PASSWORD=password
+
+    TO
+
+    EMAIL=yourid@gmail.com
+    PASSWORD=id password
+
+3. And the last thing, open "server.js" file and add sender and reciever email id here.
+    
+    from: 'sender id',
+    to: 'reciever id',
+
+4. And you can change "project.js" data to set you project data instead of dummy data.
+
+Thanks 
+
+------------------------- MODERN WEB -----------------------------------
